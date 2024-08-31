@@ -1,10 +1,99 @@
 /* This file contains global CSS styles that apply to the entire application.
 Define styles that affects all components within the app.*/
 /* //import google fonts here */
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./assets/fonts/circular-std/CircularStd-Book.woff2") format("woff2"),
+    url("./assets/fonts/circular-std/CircularStd-Book.woff") format("woff"),
+    url("./assets/fonts/circular-std/CircularStd-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./assets/fonts/circular-std/CircularStd-Medium.woff2")
+      format("woff2"),
+    url("./assets/fonts/circular-std/CircularStd-Medium.woff") format("woff"),
+    url("./assets/fonts/circular-std/CircularStd-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./assets/fonts/circular-std/CircularStd-Bold.woff2") format("woff2"),
+    url("./assets/fonts/circular-std/CircularStd-Bold.woff") format("woff"),
+    url("./assets/fonts/circular-std/CircularStd-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./assets/fonts/circular-std/CircularStd-Black.woff2")
+      format("woff2"),
+    url("./assets/fonts/circular-std/CircularStd-Black.woff") format("woff"),
+    url("./assets/fonts/circular-std/CircularStd-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std";
+
+  src: url("./assets/fonts/circular-std/CircularStd-BookItalic.woff2")
+      format("woff2"),
+    url("./assets/fonts/circular-std/CircularStd-BookItalic.woff")
+      format("woff"),
+    url("./assets/fonts/circular-std/CircularStd-BookItalic.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./assets/fonts/circular-std/CircularStd-MediumItalic.woff2")
+      format("woff2"),
+    url("./assets/fonts/circular-std/CircularStd-MediumItalic.woff")
+      format("woff"),
+    url("./assets/fonts/circular-std/CircularStd-MediumItalic.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("./assets/fonts/circular-std/CircularStd-BoldItalic.woff2")
+      format("woff2"),
+    url("./assets/fonts/circular-std/CircularStd-BoldItalic.woff")
+      format("woff"),
+    url("./assets/fonts/circular-std/CircularStd-BoldItalic.ttf")
+      format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Circular Std";
+
+  src: url("./assets/fonts/circular-std/CircularStd-BlackItalic.woff2")
+      format("woff2"),
+    url("./assets/fonts/circular-std/CircularStd-BlackItalic.woff")
+      format("woff"),
+    url("./assets/fonts/circular-std/CircularStd-BlackItalic.ttf")
+      format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

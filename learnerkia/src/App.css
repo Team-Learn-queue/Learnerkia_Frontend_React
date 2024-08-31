@@ -9,7 +9,7 @@ Style the elements and apply visual formatting to the app. */
 }
 
 body {
-  @apply bg-red-900;
+  @apply bg-lrnrkia-pink font-circularStd;
 }
 
 .logo {
