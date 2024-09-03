@@ -1,5 +1,5 @@
 import Dashboard from "../components/pages/Dashboard";
 
-const homeRoutes = [{ path: "", element: <Dashboard /> }];
+const homeRoutes = [{}];
 
 export default homeRoutes;

@@ -95,9 +95,10 @@ Define styles that affects all components within the app.*/
   font-style: italic;
 }
 
-body {
-  @apply m-0;
+:root {
+  @apply font-circularStd   text-base font-normal;
 }
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

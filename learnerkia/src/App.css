@@ -1,17 +1,13 @@
 /* This file contains the CSS styles specific to the App.js component.
 Style the elements and apply visual formatting to the app. */
 
-#root {
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
-  text-align: center;
-}
-
 body {
   @apply w-full bg-lrnrkia-pink font-circularStd m-0;
 }
 
+h1 {
+  @apply text-lrnrkia-white;
+}
 /* .logo {
   height: 6em;
   padding: 1.5em;
