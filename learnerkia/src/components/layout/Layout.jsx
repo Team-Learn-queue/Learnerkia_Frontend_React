@@ -1,12 +1,18 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Sidebar from "./Sidebar";
+import Header from "./Header";
 
 const Layout = () => {
   return (
-    <div>
-      <h1 className="text-black">Layout</h1>
-
-      <Outlet />
+    <div className="bg-red-100">
+      <Sidebar />
+      <div className="ml-60">
+        <Header />
+        <div className="pt-10">
+          <Outlet />
+        </div>
+      </div>
     </div>
   );
 };
