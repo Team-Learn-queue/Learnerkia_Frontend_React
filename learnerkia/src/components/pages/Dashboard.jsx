@@ -1,7 +1,15 @@
-import React from "react";
+import ActionBtn from "../common/buttons/ActionBtn";
+import PageHeader from "../common/PageHeader";
 
 const Dashboard = () => {
-  return <div className="min-h-[100vh] bg-lrnrkia-white">Dashboard</div>;
+  return (
+    <div>
+      <PageHeader
+        pageName={"Dashboard"}
+        actionButton={<ActionBtn buttonName={"Action Btn"} />}
+      />
+    </div>
+  );
 };
 
 export default Dashboard;

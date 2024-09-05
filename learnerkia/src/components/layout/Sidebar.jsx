@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import NavItem from "../common/NavItem";
+import NavItem from "../common/navigation/NavItem";
 import SideBarHeader from "../common/SideBarHeader";
 
 import logo1 from "../../assets/images/logo-full.svg";
@@ -18,7 +18,7 @@ const Sidebar = () => {
     <aside className="w-60 min-h-screen fixed bg-lrnrkia-verydark-gray pt-9 z-50 text-lrnrkia-white text-lg rounded-tr-[20px]">
       <SideBarHeader logo={logo1} organization={"University of Essex"} />
       <nav className="min-h-[80vh] relative  p-2 pl-8 pt-10">
-        <ul className="flex flex-col gap-12">
+        <ul className="flex flex-col gap-10">
           <li>
             <NavItem navName={"Dashboard"} navIcon={HomeIcon} navUrl={""} />
           </li>
@@ -40,14 +40,14 @@ const Sidebar = () => {
             <NavItem
               navName={"Role Management"}
               navIcon={RoleIcon}
-              navUrl={"rolemanagement"}
+              navUrl={"role-management"}
             />
           </li>
           <li>
             <NavItem
               navName={"Knowlege Bank"}
               navIcon={BookIcon}
-              navUrl={"knowledgebank"}
+              navUrl={"knowledge-bank"}
             />
           </li>
           <li>

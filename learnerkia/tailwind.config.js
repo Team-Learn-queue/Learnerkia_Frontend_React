@@ -26,6 +26,7 @@ export default {
 
         "lrnrkia-black": "rgba(0, 0, 0, 1)",
         "lrnrkia-white": "rgba(255, 255, 255, 1)",
+        "lrnrkia-pale-white": "rgba(246, 247, 251, 1)",
       },
     },
   },

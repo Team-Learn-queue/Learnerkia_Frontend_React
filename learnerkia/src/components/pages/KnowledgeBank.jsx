@@ -1,7 +1,11 @@
-import React from "react";
+import PageHeader from "../common/PageHeader";
 
 const KnowledgeBank = () => {
-  return <div>KnowledgeBank</div>;
+  return (
+    <div>
+      <PageHeader pageName={"Knowledge Bank"} />
+    </div>
+  );
 };
 
 export default KnowledgeBank;

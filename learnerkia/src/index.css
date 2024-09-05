@@ -96,7 +96,19 @@ Define styles that affects all components within the app.*/
 }
 
 :root {
-  @apply font-circularStd   text-base font-normal;
+  @apply font-circularStd bg-lrnrkia-pale-white text-base font-normal;
+}
+
+body {
+  @apply w-full m-0;
+}
+
+h1 {
+  @apply text-lrnrkia-white;
+}
+
+h3 {
+  @apply font-bold text-2xl;
 }
 
 /* :root {

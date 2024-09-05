@@ -1,7 +1,11 @@
-import React from "react";
+import PageHeader from "../common/PageHeader";
 
 const Settings = () => {
-  return <div>Settings</div>;
+  return (
+    <div>
+      <PageHeader pageName={"Settings"} />
+    </div>
+  );
 };
 
 export default Settings;

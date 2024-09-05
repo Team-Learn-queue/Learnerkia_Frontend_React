@@ -1,7 +1,11 @@
-import React from "react";
+import PageHeader from "../common/PageHeader";
 
 const Registration = () => {
-  return <div>Registration</div>;
+  return (
+    <div>
+      <PageHeader pageName={"Registration"} />
+    </div>
+  );
 };
 
 export default Registration;

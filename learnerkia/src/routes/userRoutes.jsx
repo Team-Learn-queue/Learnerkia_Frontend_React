@@ -4,7 +4,8 @@ import Dashboard from "../components/pages/Dashboard";
 import KnowledgeBank from "../components/pages/KnowledgeBank";
 import Members from "../components/pages/Members";
 import Registration from "../components/pages/Registration";
-import RoleManagement from "../components/pages/RoleManagement";
+import CreateNewRole from "../components/pages/RoleManagement/CreateNewRole";
+import RoleManagement from "../components/pages/RoleManagement/RoleManagement";
 import Session from "../components/pages/Session";
 import Settings from "../components/pages/Settings";
 
@@ -12,8 +13,9 @@ const userRoutes = [
   { path: "", element: <Dashboard /> },
   { path: "registration", element: <Registration /> },
   { path: "members", element: <Members /> },
-  { path: "rolemanagement", element: <RoleManagement /> },
-  { path: "knowledgebank", element: <KnowledgeBank /> },
+  { path: "role-management", element: <RoleManagement /> },
+  { path: "create-role", element: <CreateNewRole /> },
+  { path: "knowledge-bank", element: <KnowledgeBank /> },
   { path: "billing", element: <Billing /> },
   { path: "session", element: <Session /> },
   { path: "account", element: <Account /> },

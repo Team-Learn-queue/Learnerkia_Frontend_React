@@ -1,7 +1,11 @@
-import React from "react";
+import PageHeader from "../common/PageHeader";
 
 const Account = () => {
-  return <div>Account</div>;
+  return (
+    <div>
+      <PageHeader pageName={"Account"} />
+    </div>
+  );
 };
 
 export default Account;
