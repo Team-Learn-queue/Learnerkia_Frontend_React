@@ -3,15 +3,17 @@ import NavItem from "../common/navigation/NavItem";
 import SideBarHeader from "../common/SideBarHeader";
 
 import logo1 from "../../assets/images/logo-full.svg";
-import HomeIcon from "../../assets/icons/home.svg";
-import RegIcon from "../../assets/icons/person-add.svg";
-import MemberIcon from "../../assets/icons/people.svg";
-import RoleIcon from "../../assets/icons/people.svg";
-import BookIcon from "../../assets/icons/book.svg";
-import BillingIcon from "../../assets/icons/credit-card.svg";
-import SessionIcon from "../../assets/icons/calendar.svg";
-import AccountIcon from "../../assets/icons/person.svg";
-import SettingsIcon from "../../assets/icons/settings.svg";
+
+import {
+  BookIcon,
+  CalendarIcon,
+  CreditCardIcon,
+  HomeIcon,
+  PeopleIcon,
+  PersonAddIcon,
+  PersonIcon,
+  SettingsIcon,
+} from "../../assets/icons/Icons";
 
 const Sidebar = () => {
   return (
@@ -20,54 +22,61 @@ const Sidebar = () => {
       <nav className="min-h-[80vh] relative  p-2 pl-8 pt-10">
         <ul className="flex flex-col gap-10">
           <li>
-            <NavItem navName={"Dashboard"} navIcon={HomeIcon} navUrl={""} />
+            <NavItem navName={"Dashboard"} navIcon={<HomeIcon />} navUrl={""} />
           </li>
           <li>
             <NavItem
               navName={"Registration"}
-              navIcon={RegIcon}
+              navIcon={<PersonAddIcon />}
               navUrl={"registration"}
             />
           </li>
           <li>
             <NavItem
               navName={"Members"}
-              navIcon={MemberIcon}
+              navIcon={<PeopleIcon />}
               navUrl={"members"}
             />
           </li>
           <li>
             <NavItem
+              navName={"Groups"}
+              navIcon={<PeopleIcon />}
+              navUrl={"groups"}
+            />
+          </li>
+          <li>
+            <NavItem
               navName={"Role Management"}
-              navIcon={RoleIcon}
+              navIcon={<PeopleIcon />}
               navUrl={"role-management"}
             />
           </li>
           <li>
             <NavItem
               navName={"Knowlege Bank"}
-              navIcon={BookIcon}
+              navIcon={<BookIcon />}
               navUrl={"knowledge-bank"}
             />
           </li>
           <li>
             <NavItem
               navName={"Billing"}
-              navIcon={BillingIcon}
+              navIcon={<CreditCardIcon />}
               navUrl={"billing"}
             />
           </li>
           <li>
             <NavItem
               navName={"Session "}
-              navIcon={SessionIcon}
+              navIcon={<CalendarIcon />}
               navUrl={"session"}
             />
           </li>
           <li>
             <NavItem
               navName={"Account "}
-              navIcon={AccountIcon}
+              navIcon={<PersonIcon />}
               navUrl={"account"}
             />
           </li>
@@ -75,7 +84,7 @@ const Sidebar = () => {
           <li className="absolute bottom-0">
             <NavItem
               navName={"Settings"}
-              navIcon={SettingsIcon}
+              navIcon={<SettingsIcon />}
               navUrl={"settings"}
             />
           </li>

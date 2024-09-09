@@ -10,11 +10,13 @@ import RoleManagement from "../components/pages/RoleManagement/RoleManagement";
 import Session from "../components/pages/Session";
 import Settings from "../components/pages/Settings";
 import ActiveRoles from "../components/pages/RoleManagement/ActiveRoles";
+import Groups from "../components/pages/Groups";
 
 const userRoutes = [
   { path: "", element: <Dashboard /> },
   { path: "registration", element: <Registration /> },
   { path: "members", element: <Members /> },
+  { path: "groups", element: <Groups /> },
 
   {
     path: "role-management",
