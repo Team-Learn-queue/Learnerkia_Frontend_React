@@ -7,7 +7,7 @@ import IconDropdown from "../common/dropdowns/IconDropdown";
 
 const Header = () => {
   return (
-    <header className="min-w-[95vw] max-w-[1000px] min-h-10 fixed left-0 flex justify-end items-center gap-6 p-6 ">
+    <header className="min-h-10 max-w-[1800px] mr-auto bg-lrnrkia-pale-white flex justify-end items-center gap-6 p-6 sticky top-0 ">
       <div>
         <img src={NotificationIcon} alt="notification icon" />
       </div>

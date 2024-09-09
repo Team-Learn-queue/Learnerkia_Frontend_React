@@ -1,15 +1,19 @@
-import React from "react";
+import PageContent from "../../common/PageContent";
 import PageHeader from "../../common/PageHeader";
 import NavBtn from "../../common/buttons/NavBtn";
+import { Outlet } from "react-router-dom";
 
 const RoleManagement = () => {
   return (
     <div>
       <PageHeader
         pageName={"Role Management"}
-        actionButton={<NavBtn buttonName={"Nav Btn"} />}
+        actionButton={
+          <NavBtn buttonName={"Create New Role"} navUrl={"/create-role"} />
+        }
       />
-      <div className="bg-white min-h-[70vh] p-4">Active Roles go here</div>
+
+      <PageContent />
     </div>
   );
 };

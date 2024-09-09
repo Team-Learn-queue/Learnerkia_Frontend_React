@@ -6,7 +6,7 @@ const routesMain = [
   {
     path: "/",
     element: <Layout />,
-    children: [...homeRoutes, ...userRoutes],
+    children: [...userRoutes],
   },
 ];
 

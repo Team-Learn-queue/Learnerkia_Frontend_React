@@ -2,7 +2,12 @@ import React from "react";
 
 const ActiveRoles = () => {
   return (
-    <div className="bg-red-600 min-h-[70vh] p-4">Active Roles go here</div>
+    <div className=" min-h-[70vh] p-4">
+      <PageHeader
+        pageName={"Role Management"}
+        actionButton={<NavBtn buttonName={"Nav Btn"} navUrl={"/create-role"} />}
+      />
+    </div>
   );
 };
 

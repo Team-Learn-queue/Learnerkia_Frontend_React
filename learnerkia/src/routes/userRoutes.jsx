@@ -1,3 +1,4 @@
+import { Children } from "react";
 import Account from "../components/pages/Account";
 import Billing from "../components/pages/Billing";
 import Dashboard from "../components/pages/Dashboard";
@@ -8,13 +9,20 @@ import CreateNewRole from "../components/pages/RoleManagement/CreateNewRole";
 import RoleManagement from "../components/pages/RoleManagement/RoleManagement";
 import Session from "../components/pages/Session";
 import Settings from "../components/pages/Settings";
+import ActiveRoles from "../components/pages/RoleManagement/ActiveRoles";
 
 const userRoutes = [
   { path: "", element: <Dashboard /> },
   { path: "registration", element: <Registration /> },
   { path: "members", element: <Members /> },
-  { path: "role-management", element: <RoleManagement /> },
+
+  {
+    path: "role-management",
+    element: <RoleManagement />,
+    // children: [{ path: "", element: <ActiveRoles /> }],
+  },
   { path: "create-role", element: <CreateNewRole /> },
+
   { path: "knowledge-bank", element: <KnowledgeBank /> },
   { path: "billing", element: <Billing /> },
   { path: "session", element: <Session /> },
