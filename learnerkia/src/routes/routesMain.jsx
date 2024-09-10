@@ -1,4 +1,4 @@
-import Layout from "../components/layout/Layout";
+import Layout from "../components/layout/main/Layout";
 import homeRoutes from "./homeRoutes";
 import userRoutes from "./userRoutes";
 

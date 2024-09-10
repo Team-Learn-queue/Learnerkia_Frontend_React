@@ -1,4 +1,4 @@
-import PageHeader from "../common/PageHeader";
+import PageHeader from "../layout/secondary/PageHeader";
 
 const Session = () => {
   return (

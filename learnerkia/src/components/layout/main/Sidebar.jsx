@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
-import NavItem from "../common/navigation/NavItem";
-import SideBarHeader from "../common/SideBarHeader";
+import NavItem from "../../common/navigation/NavItem";
+import SideBarHeader from "../secondary/SideBarHeader";
 
-import logo1 from "../../assets/images/logo-full.svg";
+import logo1 from "../../../assets/images/logo-full.svg";
 
 import {
   BookIcon,
@@ -13,7 +13,7 @@ import {
   PersonAddIcon,
   PersonIcon,
   SettingsIcon,
-} from "../../assets/icons/Icons";
+} from "../../../assets/icons/Icons";
 
 const Sidebar = () => {
   return (

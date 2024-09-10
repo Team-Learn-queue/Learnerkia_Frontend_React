@@ -1,9 +1,13 @@
-import EventBtn from "../common/buttons/EventBtn";
+import EventBtn from "../../common/buttons/EventBtn";
 
-import ProfileInfo from "../common/ProfileInfo";
-import IconDropdown from "../common/dropdowns/IconDropdown";
-import DefaultProfilePic from "../../assets/images/react.svg";
-import { BellIcon, CalendarIcon, PersonIcon } from "../../assets/icons/Icons";
+import ProfileInfo from "../../common/ProfileInfo";
+import IconDropdown from "../../common/dropdowns/IconDropdown";
+import DefaultProfilePic from "../../../assets/images/react.svg";
+import {
+  BellIcon,
+  CalendarIcon,
+  PersonIcon,
+} from "../../../assets/icons/Icons";
 
 const Header = () => {
   return (

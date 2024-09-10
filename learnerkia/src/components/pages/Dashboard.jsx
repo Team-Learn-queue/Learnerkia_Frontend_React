@@ -1,5 +1,5 @@
 import ActionBtn from "../common/buttons/ActionBtn";
-import PageHeader from "../common/PageHeader";
+import PageHeader from "../layout/secondary/PageHeader";
 
 const Dashboard = () => {
   return (
