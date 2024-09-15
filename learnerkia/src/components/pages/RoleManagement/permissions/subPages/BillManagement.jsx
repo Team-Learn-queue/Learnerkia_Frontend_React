@@ -1,7 +1,7 @@
 import React from "react";
 
 const BillManagement = () => {
-  return <div>BillManagement</div>;
+  return <h3>Bill Management</h3>;
 };
 
 export default BillManagement;

@@ -1,6 +1,6 @@
 import PageHeader from "../../layout/secondary/PageHeader";
 import NavBtn from "../../common/buttons/NavBtn";
-import { Outlet } from "react-router-dom";
+import RoleManagementTable from "../../common/tables/RoleManagementTable";
 
 const RoleManagement = () => {
   return (
@@ -12,7 +12,7 @@ const RoleManagement = () => {
         }
       />
 
-      <h3>TABLE FOR ROLES</h3>
+      <RoleManagementTable />
     </div>
   );
 };

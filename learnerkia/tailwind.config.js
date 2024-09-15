@@ -14,9 +14,11 @@ export default {
         "lrnrkia-medium-gray": "rgba(126, 127, 133, 1)",
         "lrnrkia-light-gray": "rgba(206, 207, 209, 1)",
 
-        "lrnrkia-dark-teal": "rgba(34, 61, 93, 1)",
+        "lrnrkia-verydark-teal": "rgba(34, 61, 93, 1)",
+        "lrnrkia-dark-teal": "rgba(0, 162, 232, 1)",
         "lrnrkia-medium-teal": "rgba(36, 211, 229, 1)",
         "lrnrkia-light-teal": "rgba(178, 248, 255, 1)",
+        "lrnrkia-verylight-teal": "rgba(241, 247, 254, 1)",
 
         "lrnrkia-medium-orange": "rgba(253, 193, 64, 1)",
         "lrnrkia-light-orange": "rgba(250, 212, 132, 1)",

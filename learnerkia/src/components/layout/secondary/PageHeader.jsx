@@ -1,12 +1,24 @@
 import React from "react";
 import HeaderNav from "../../common/navigation/HeaderNav";
 
-const PageHeader = ({ pageName, actionButton }) => {
+const PageHeader = ({
+  pageName,
+  actionButton,
+  hasHeaderNav,
+  headerNavName,
+  headerNavUrl,
+}) => {
   return (
-    <div className="min-h-20 bg-lrnrkia-light-teal flex justify-between items-center p-3 relative">
-      <HeaderNav />
-      <h3>{pageName}</h3>
-      <button>{actionButton}</button>
+    <div>
+      {hasHeaderNav ? (
+        <HeaderNav headerNavName={headerNavName} navUrl={headerNavUrl} />
+      ) : (
+        ""
+      )}
+      <div className="min-h-24 flex justify-between items-end p-3 pl-0 mb-6 ">
+        <h3>{pageName}</h3>
+        <button>{actionButton}</button>
+      </div>
     </div>
   );
 };

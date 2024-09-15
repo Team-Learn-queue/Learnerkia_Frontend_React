@@ -5,6 +5,8 @@ import SideBarHeader from "../secondary/SideBarHeader";
 import logo1 from "../../../assets/images/logo-full.svg";
 
 import {
+  ArrowLeftIcon,
+  ArrowLeftIOSIcon,
   BookIcon,
   CalendarIcon,
   CreditCardIcon,
@@ -17,7 +19,10 @@ import {
 
 const Sidebar = () => {
   return (
-    <aside className="w-60 min-h-screen fixed bg-lrnrkia-verydark-gray pt-9 z-50 text-lrnrkia-white text-lg rounded-tr-[20px]">
+    <aside className="w-60 min-h-screen fixed bg-lrnrkia-verydark-teal pt-9 text-lrnrkia-white text-lg rounded-tr-[20px] z-50">
+      <div className="w-10 h-[54px] bg-lrnrkia-verydark-teal flex justify-center items-center absolute -right-5 top-24 rounded">
+        <ArrowLeftIOSIcon />
+      </div>
       <SideBarHeader logo={logo1} organization={"University of Essex"} />
       <nav className="min-h-[80vh] relative  p-2 pl-8 pt-10">
         <ul className="flex flex-col gap-10">
@@ -38,13 +43,13 @@ const Sidebar = () => {
               navUrl={"members"}
             />
           </li>
-          <li>
+          {/* <li>
             <NavItem
               navName={"Groups"}
               navIcon={<PeopleIcon />}
               navUrl={"groups"}
             />
-          </li>
+          </li> */}
           <li>
             <NavItem
               navName={"Role Management"}

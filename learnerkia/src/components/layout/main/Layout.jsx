@@ -4,11 +4,12 @@ import Header from "./Header";
 
 const Layout = () => {
   return (
-    <div className=" max-w-[1800px] mr-auto ">
+    <div className="h-screen max-w-[1800px] mr-auto">
       <Sidebar />
+
       <div className="ml-60">
         <Header />
-        <div className="min-h-[70vh] bg-lrnrkia-white mx-4  ">
+        <div className="h-full px-4 ml-4 relative">
           <Outlet />
         </div>
       </div>

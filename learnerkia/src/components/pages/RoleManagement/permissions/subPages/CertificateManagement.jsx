@@ -1,7 +1,7 @@
 import React from "react";
 
 const CertificateManagement = () => {
-  return <div>CertificateManagement</div>;
+  return <h3>Certificate Management</h3>;
 };
 
 export default CertificateManagement;
