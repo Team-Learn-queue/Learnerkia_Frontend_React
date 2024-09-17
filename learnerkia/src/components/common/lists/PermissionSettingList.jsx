@@ -5,10 +5,12 @@ const PermissionSettingList = ({ settingsName, navUrl }) => {
     <NavLink
       to={navUrl}
       className={({ isActive }) =>
-        isActive ? "bg-blue-500" : "bg-transparent"
+        isActive
+          ? "bg-lrnrkia-dark-teal text-lrnrkia-white block"
+          : "hover:bg-gray-200 block"
       }
     >
-      <li className={"text-lg font-medium p-4 border-b-[1px] "}>
+      <li className={"text-lg font-medium pl-8 py-3 mb-2  border-b-[1px] "}>
         {settingsName}
       </li>
     </NavLink>

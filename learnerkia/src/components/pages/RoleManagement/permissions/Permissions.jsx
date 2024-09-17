@@ -1,4 +1,3 @@
-import React from "react";
 import PageHeader from "../../../layout/secondary/PageHeader";
 import NavBtn from "../../../common/buttons/NavBtn";
 import { Outlet } from "react-router-dom";
@@ -16,12 +15,13 @@ const Permissions = () => {
         headerNavName={"Role Mangement"}
         headerNavUrl={"/role-management"}
       />
-      <div className="bg-lrnrkia-white">
+      <div className="">
         <PermissionHeader />
-        <div className="flex gap-4">
-          <ul className="w-1/2 max-w-[472px] flex-shrink-0">
+        <div className="flex">
+          <ul className="w-1/2 max-w-[472px] h-fit flex-shrink-0 bg-white">
             {/* Make list a component */}
             <PermissionSettingList settingsName={"User"} navUrl={"user"} />
+
             <PermissionSettingList
               settingsName={"Content Management"}
               navUrl={"content-mgmt"}
@@ -43,7 +43,7 @@ const Permissions = () => {
               navUrl={"advanced-certificate-mgmt"}
             />
           </ul>
-          <div className="w-full bg-lrnrkia-verylight-teal p-6">
+          <div className="w-full bg-lrnrkia-verylight-teal p-6 rounded-[10px] shadow-sm">
             <Outlet />
           </div>
         </div>

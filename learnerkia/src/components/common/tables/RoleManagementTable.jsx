@@ -20,14 +20,14 @@ const data = [
 ];
 
 const columns = [
-  // {
-  //   // Header checkbox (for select all functionality)
-  //   id: "select",
-  //   header: " ({ tableInstance }) => <Checkbox />",
-  //   cell: () => <Checkbox />,
-  //   enableSorting: false,
-  //   enableColumnFilter: false,
-  // },
+  {
+    // Header checkbox (for select all functionality)
+    id: "select",
+    header: ({ tableInstance }) => <Checkbox />,
+    cell: () => <Checkbox />,
+    // enableSorting: false,
+    // enableColumnFilter: false,
+  },
   {
     accessorKey: "roleName",
     header: "Role Name",

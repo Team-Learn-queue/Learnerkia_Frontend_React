@@ -5,7 +5,6 @@ import SideBarHeader from "../secondary/SideBarHeader";
 import logo1 from "../../../assets/images/logo-full.svg";
 
 import {
-  ArrowLeftIcon,
   ArrowLeftIOSIcon,
   BookIcon,
   CalendarIcon,

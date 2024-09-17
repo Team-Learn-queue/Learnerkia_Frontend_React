@@ -6,7 +6,7 @@ const HeaderNav = ({ headerNavName, navUrl }) => {
     <NavLink
       to={navUrl}
       className={
-        "h-8 text-lg text-lrnrkia-medium-teal absolute top-0 left-4 p-2 pl-0 flex justify-center items-center gap-4"
+        "h-8 text-lg text-lrnrkia-dark-teal absolute top-0 left-4 p-2 pl-0 flex justify-center items-center gap-4"
       }
     >
       <ArrowLeftIcon className={"fill-lrnrkia-verydark-teal"} />

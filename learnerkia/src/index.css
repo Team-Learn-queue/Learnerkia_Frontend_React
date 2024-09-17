@@ -117,8 +117,17 @@ h4 {
 /* .active {
   @apply bg-red-900;
 } */
-input {
-  @apply min-w-24 min-h-14 border-2 rounded-lg;
+
+input[type="text"] {
+  @apply min-h-10 min-w-10 border-[1px] border-lrnrkia-light-gray rounded-lg text-lg p-3;
+}
+
+input[type="checkbox"] {
+  @apply w-5 h-5;
+}
+
+label {
+  @apply font-medium text-base;
 }
 
 table {

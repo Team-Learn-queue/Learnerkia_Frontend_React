@@ -1,7 +1,13 @@
 import React from "react";
+import { CheckMarkIcon } from "../../../assets/icons/Icons";
 
 const SelectAllBtn = () => {
-  return <button>Select All</button>;
+  return (
+    <button className=" flex gap-[6px]  border-[1px] border-lrnrkia-verydark-teal text-lrnrkia-verydark-teal rounded-xl px-4 py-2">
+      Select All
+      <CheckMarkIcon />
+    </button>
+  );
 };
 
 export default SelectAllBtn;
