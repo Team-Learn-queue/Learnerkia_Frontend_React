@@ -1,6 +1,6 @@
 import React from "react";
 
-const PermissionList = ({ settingName = "Setting Name" }) => {
+const PermissionListItem = ({ settingName = "Setting Name" }) => {
   return (
     <div className="flex justify-start items-center gap-7 mt-6 text-xs text-lrnrkia-dark-gray">
       <input type="checkbox" />
@@ -11,4 +11,4 @@ const PermissionList = ({ settingName = "Setting Name" }) => {
   );
 };
 
-export default PermissionList;
+export default PermissionListItem;

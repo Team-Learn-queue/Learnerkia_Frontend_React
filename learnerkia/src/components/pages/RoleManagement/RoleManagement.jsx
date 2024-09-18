@@ -11,7 +11,6 @@ const RoleManagement = () => {
           <NavBtn buttonName={"Create New Role"} navUrl={"create-role"} />
         }
       />
-
       <RoleManagementTable />
     </div>
   );

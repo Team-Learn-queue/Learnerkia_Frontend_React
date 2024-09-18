@@ -1,5 +1,5 @@
 import SelectAllBtn from "../../../../common/buttons/SelectAllBtn";
-import PermissionList from "../../../../common/lists/PermissionList";
+import PermissionListItem from "../../../../common/lists/PermissionListItem";
 
 const ContentManagement = () => {
   const permissionsList = [
@@ -13,7 +13,10 @@ const ContentManagement = () => {
 
       <div>
         {permissionsList.map((permission) => (
-          <PermissionList key={permission.id} settingName={permission.label} />
+          <PermissionListItem
+            key={permission.id}
+            settingName={permission.label}
+          />
         ))}
       </div>
     </div>

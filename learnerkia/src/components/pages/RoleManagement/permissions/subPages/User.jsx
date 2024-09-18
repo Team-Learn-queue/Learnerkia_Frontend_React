@@ -1,6 +1,6 @@
 import React from "react";
 import SelectAllBtn from "../../../../common/buttons/SelectAllBtn";
-import PermissionList from "../../../../common/lists/PermissionList";
+import PermissionListItem from "../../../../common/lists/PermissionListItem";
 
 const User = () => {
   const permissionsList = [
@@ -19,7 +19,10 @@ const User = () => {
 
       <div>
         {permissionsList.map((permission) => (
-          <PermissionList key={permission.id} settingName={permission.label} />
+          <PermissionListItem
+            key={permission.id}
+            settingName={permission.label}
+          />
         ))}
       </div>
     </div>

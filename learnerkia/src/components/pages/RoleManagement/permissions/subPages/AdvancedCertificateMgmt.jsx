@@ -1,19 +1,24 @@
 import SelectAllBtn from "../../../../common/buttons/SelectAllBtn";
-import PermissionList from "../../../../common/lists/PermissionList";
+import PermissionListItem from "../../../../common/lists/PermissionListItem";
 
 const AdvancedCertificateMgmt = () => {
+  const permissionsList = [
+    { id: 1, label: "Veiw certificate" },
+    { id: 2, label: "Download Certificate" },
+    { id: 3, label: "Share Certificate" },
+  ];
   return (
     <div>
       {/* <h3>User</h3> */}
       <SelectAllBtn />
 
-      <div className="mt-7">
-        <PermissionList />
-        <PermissionList />
-        <PermissionList />
-        <PermissionList />
-        <PermissionList />
-        <PermissionList />
+      <div>
+        {permissionsList.map((permission) => (
+          <PermissionListItem
+            key={permission.id}
+            settingName={permission.label}
+          />
+        ))}
       </div>
     </div>
   );
