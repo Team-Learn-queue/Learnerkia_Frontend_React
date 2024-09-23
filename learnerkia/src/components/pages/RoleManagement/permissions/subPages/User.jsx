@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import SelectAllBtn from "../../../../common/buttons/SelectAllBtn";
 import PermissionListItem from "../../../../common/lists/PermissionListItem";
 
@@ -12,16 +12,46 @@ const User = () => {
     { id: 6, label: "Assess a user" },
     { id: 7, label: "Assign contents to a group of users  " },
   ];
+  ////STATES _________________________///////
+  const [permissions, setPermissions] = useState(permissionsList);
+  const [selectedPermissions, setSelectedPermissions] = useState([]);
+  const [selectAll, setSelectAll] = useState(false);
+
+  const handleCheckboxChange = (id) => {
+    setSelectedPermissions((prevSelected) =>
+      prevSelected.includes(id)
+        ? prevSelected.filter((permId) => permId !== id)
+        : [...prevSelected, id]
+    );
+    console.log(selectedPermissions);
+  };
+
+  const handleSelectAll = () => {
+    if (selectAll) {
+      setSelectedPermissions([]);
+    } else {
+      setSelectedPermissions(permissions.map((permission) => permission.id));
+    }
+    setSelectAll(!selectAll);
+    console.log("Select All " + selectAll);
+  };
+
+  useEffect(() => {
+    setSelectAll(selectedPermissions.length === permissions.length);
+  }, [selectedPermissions.length]);
+
   return (
     <div>
       {/* <h3>User</h3> */}
-      <SelectAllBtn />
+      <SelectAllBtn onClick={handleSelectAll} isActive={selectAll} />
 
       <div>
-        {permissionsList.map((permission) => (
+        {permissions.map((permission) => (
           <PermissionListItem
             key={permission.id}
             settingName={permission.label}
+            _checked={selectedPermissions.includes(permission.id)}
+            _onChange={() => handleCheckboxChange(permission.id)}
           />
         ))}
       </div>

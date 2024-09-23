@@ -1,14 +1,16 @@
+import React from "react";
 import SelectAllBtn from "../../../../common/buttons/SelectAllBtn";
 import PermissionListItem from "../../../../common/lists/PermissionListItem";
 
-const CertificateManagement = () => {
+const Assessment = () => {
   const permissionsList = [
-    { id: 1, label: "Veiw certificate" },
-    { id: 2, label: "Download Certificate" },
-    { id: 3, label: "Share Certificate" },
+    { id: 1, label: "Veiw bills" },
+    { id: 2, label: "Download bills" },
+    { id: 3, label: "Share bills" },
   ];
   return (
     <div>
+      {/* <h3>User</h3> */}
       <SelectAllBtn />
 
       <div>
@@ -23,4 +25,4 @@ const CertificateManagement = () => {
   );
 };
 
-export default CertificateManagement;
+export default Assessment;

@@ -123,7 +123,7 @@ input[type="text"] {
 }
 
 input[type="checkbox"] {
-  @apply w-5 h-5;
+  @apply min-w-5 min-h-5;
 }
 
 label {

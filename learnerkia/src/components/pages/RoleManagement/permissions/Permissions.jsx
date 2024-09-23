@@ -35,6 +35,10 @@ const Permissions = () => {
               navUrl={"report-analytics"}
             />
             <PermissionSettingList
+              settingsName={"Assessment"}
+              navUrl={"assessment"}
+            />
+            <PermissionSettingList
               settingsName={"Bill Management"}
               navUrl={"bill-mgmt"}
             />

@@ -3,12 +3,11 @@ import PermissionListItem from "../../../../common/lists/PermissionListItem";
 
 const ContentManagement = () => {
   const permissionsList = [
-    { id: 1, label: "Assign contents to user" },
+    { id: 1, label: "Assign contents to a user" },
     { id: 2, label: "Assign contents to group of users" },
   ];
   return (
     <div>
-      {/* <h3>User</h3> */}
       <SelectAllBtn />
 
       <div>

@@ -3,17 +3,23 @@ import SelectAllBtn from "../../../../common/buttons/SelectAllBtn";
 
 const ReportAnalytics = () => {
   const permissionsList = [
-    { id: 1, label: "Add user" },
-    { id: 2, label: "Edit user" },
-    { id: 3, label: "View all users" },
-    { id: 4, label: "Archive User" },
-    { id: 5, label: "Disable User" },
-    { id: 6, label: "Assess a user" },
-    { id: 7, label: "Assign contents to a group of users  " },
+    { id: 1, label: "View the report/analytics" },
+    { id: 2, label: "Courses completion rate over time" },
+    { id: 3, label: "Best performing courses" },
+    { id: 4, label: "Average time spent learning per day " },
+    { id: 5, label: "Average time spent learning per week" },
+    { id: 6, label: "Average time spent learning per month" },
+    { id: 7, label: "Average time spent learning per quarter" },
+    { id: 8, label: "Average time spent learning per year" },
+    {
+      id: 9,
+      label:
+        "Average time spent learning over a period of time by time, date and year",
+    },
+    { id: 10, label: "Learners Performance Reports" },
   ];
   return (
     <div>
-      {/* <h3>User</h3> */}
       <SelectAllBtn />
 
       <div>

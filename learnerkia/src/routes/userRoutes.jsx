@@ -18,6 +18,7 @@ import CertificateManagement from "../components/pages/RoleManagement/permission
 import ReportAnalytics from "../components/pages/RoleManagement/permissions/subPages/ReportAnalytics";
 import BillManagement from "../components/pages/RoleManagement/permissions/subPages/BillManagement";
 import AdvancedCertificateMgmt from "../components/pages/RoleManagement/permissions/subPages/AdvancedCertificateMgmt";
+import Assessment from "../components/pages/RoleManagement/permissions/subPages/Assessment";
 
 const userRoutes = [
   { path: "", element: <Dashboard /> },
@@ -35,6 +36,7 @@ const userRoutes = [
       { path: "content-mgmt", element: <ContentManagement /> },
       { path: "certificate-mgmt", element: <CertificateManagement /> },
       { path: "report-analytics", element: <ReportAnalytics /> },
+      { path: "assessment", element: <Assessment /> },
       { path: "bill-mgmt", element: <BillManagement /> },
       {
         path: "advanced-certificate-mgmt",
