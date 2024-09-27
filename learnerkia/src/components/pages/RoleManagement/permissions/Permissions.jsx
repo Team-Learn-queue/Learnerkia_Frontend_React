@@ -15,7 +15,7 @@ const Permissions = () => {
         headerNavName={"Role Mangement"}
         headerNavUrl={"/role-management"}
       />
-      <div className="">
+      <div className="min-h-[70vh] bg-lrnrkia-white rounded-sm">
         <PermissionHeader />
         <div className="flex">
           <ul className="w-1/2 max-w-[472px] h-fit flex-shrink-0 bg-white">
@@ -47,7 +47,7 @@ const Permissions = () => {
               navUrl={"advanced-certificate-mgmt"}
             />
           </ul>
-          <div className="w-full bg-lrnrkia-verylight-teal p-6 rounded-[10px] shadow-sm">
+          <div className="w-full max-h-[60vh] bg-lrnrkia-verylight-teal p-6 rounded-e-[10px] shadow-sm overflow-y-auto">
             <Outlet />
           </div>
         </div>

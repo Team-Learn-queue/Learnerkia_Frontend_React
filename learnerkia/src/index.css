@@ -96,7 +96,7 @@ Define styles that affects all components within the app.*/
 }
 
 :root {
-  @apply font-circularStd bg-lrnrkia-pale-white text-base font-normal;
+  @apply font-circularStd bg-lrnrkia-pale-white text-base font-normal accent-blue-500;
 }
 
 body {
@@ -134,7 +134,7 @@ table {
   @apply min-w-full max-w-[1000px] m-auto;
 }
 thead {
-  @apply h-16 text-left border-2;
+  @apply h-16 text-left border-[1px];
 }
 
 tbody {
@@ -143,6 +143,7 @@ tbody {
 th {
   @apply p-4;
 }
+
 td {
   @apply p-4;
 }

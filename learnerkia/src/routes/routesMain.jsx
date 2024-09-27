@@ -1,5 +1,7 @@
 import Layout from "../components/layout/main/Layout";
-import homeRoutes from "./homeRoutes";
+import Onboarding from "../components/pages/onboarding/Onboarding";
+import authRoutes from "./authRoutes";
+
 import userRoutes from "./userRoutes";
 
 const routesMain = [
@@ -7,6 +9,11 @@ const routesMain = [
     path: "/",
     element: <Layout />,
     children: [...userRoutes],
+  },
+  {
+    path: "onboarding",
+    element: <Onboarding />,
+    children: [...authRoutes],
   },
 ];
 

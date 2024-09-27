@@ -23,7 +23,7 @@ const columns = [
   {
     // Header checkbox (for select all functionality)
     id: "select",
-    header: ({ tableInstance }) => <Checkbox />,
+    header: ({ table }) => <Checkbox />,
     cell: () => <Checkbox />,
     // enableSorting: false,
     // enableColumnFilter: false,
@@ -40,7 +40,7 @@ const columns = [
   },
   {
     id: "actions",
-    header: "Actions",
+    header: "Action",
     cell: ({ row }) => (
       <div className="flex gap-6">
         <EditBtn />
@@ -52,8 +52,8 @@ const columns = [
 
 const RoleManagementTable = () => {
   const tableInstance = useReactTable({
-    data,
     columns,
+    data,
     getCoreRowModel: getCoreRowModel(),
   });
   console.log(tableInstance.getRowModel().rows[0].original);
@@ -74,7 +74,7 @@ const RoleManagementTable = () => {
       {/* TABLE BODY */}
       <tbody>
         {tableInstance.getRowModel().rows.map((row) => (
-          <tr key={row.id}>
+          <tr key={row.id} className="hover:bg-slate-100 hover:cursor-pointer">
             {row.getVisibleCells().map((cell) => (
               <td key={cell.id}>
                 {flexRender(cell.column.columnDef.cell, cell.getContext())}

@@ -11,7 +11,7 @@ import {
 
 const Header = () => {
   return (
-    <header className="min-h-10 max-w-[1800px] mr-auto bg-lrnrkia-pale-white flex justify-end items-center gap-6 p-6 sticky top-0 ">
+    <header className="min-h-10 max-w-[1800px] mr-auto bg-lrnrkia-pale-white flex justify-end items-center gap-6 p-6 sticky top-0 z-50">
       <div>
         <BellIcon />
       </div>

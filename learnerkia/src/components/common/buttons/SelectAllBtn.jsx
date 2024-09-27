@@ -5,7 +5,7 @@ const SelectAllBtn = ({ onClick, isActive }) => {
   return (
     <button
       className={`flex gap-[6px]  border-[1px] border-lrnrkia-verydark-teal text-lrnrkia-verydark-teal rounded-xl px-4 py-2 ${
-        isActive ? "bg-lrnrkia-medium-teal" : "bg-red-500"
+        isActive ? "bg-lrnrkia-light-teal" : "bg-none"
       }`}
       onClick={onClick}
     >

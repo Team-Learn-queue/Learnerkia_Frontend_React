@@ -19,7 +19,7 @@ const CreateNewRole = () => {
           </div>
 
           <div className="absolute bottom-0 right-0">
-            <NavBtn buttonName={"Next"} navUrl={"permissions"} />
+            <NavBtn buttonName={"Next"} navUrl={"permissions/user"} />
           </div>
         </div>
       </div>

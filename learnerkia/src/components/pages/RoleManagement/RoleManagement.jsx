@@ -17,9 +17,9 @@ const RoleManagement = () => {
         }
       />
       <RoleManagementTable />
-      <h1 className="bg-slate-400 min-w-5 h-5">
+      {/* <h1 className="bg-slate-400 min-w-5 h-5">
         {isLoading ? "Loading" : "Done Loading!"}
-      </h1>
+      </h1> */}
     </div>
   );
 };
