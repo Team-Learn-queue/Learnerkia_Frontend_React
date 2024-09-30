@@ -1,12 +1,15 @@
 import {
   flexRender,
   getCoreRowModel,
+  getFilteredRowModel,
+  getPaginationRowModel,
   useReactTable,
 } from "@tanstack/react-table";
 import EditBtn from "../buttons/EditBtn";
 import DeleteBtn from "../buttons/DeleteBtn";
 import { TrashIcon } from "../../../assets/icons/Icons";
 import Checkbox from "../Checkbox";
+import { useState } from "react";
 
 // Sample data
 const data = [
@@ -24,9 +27,13 @@ const columns = [
     // Header checkbox (for select all functionality)
     id: "select",
     header: ({ table }) => <Checkbox />,
-    cell: () => <Checkbox />,
-    // enableSorting: false,
-    // enableColumnFilter: false,
+    cell: ({ row }) => (
+      <Checkbox
+        checked={row.getIsSelected()}
+        disabled={!row.getCanSelect()}
+        onChange={row.getToggleSelectedHandler()}
+      />
+    ),
   },
   {
     accessorKey: "roleName",
@@ -51,10 +58,21 @@ const columns = [
 ];
 
 const RoleManagementTable = () => {
+  const [rowSelection, setRowSelection] = useState({});
+
   const tableInstance = useReactTable({
-    columns,
     data,
+    columns,
+    state: {
+      rowSelection,
+    },
+    enableRowSelection: true, //enable row selection for all rows
+    // enableRowSelection: row => row.original.age > 18, // or enable row selection conditionally per row
+    onRowSelectionChange: setRowSelection,
     getCoreRowModel: getCoreRowModel(),
+    getFilteredRowModel: getFilteredRowModel(),
+    getPaginationRowModel: getPaginationRowModel(),
+    debugTable: true,
   });
   console.log(tableInstance.getRowModel().rows[0].original);
 
@@ -65,7 +83,9 @@ const RoleManagementTable = () => {
         {tableInstance.getHeaderGroups().map((headerGroup) => (
           <tr key={headerGroup.id}>
             {headerGroup.headers.map((header) => (
-              <th key={header.id}>{header.column.columnDef.header}</th>
+              <th key={header.id}>
+                {flexRender(header.column.columnDef.header, header.getContext)}
+              </th>
             ))}
           </tr>
         ))}
